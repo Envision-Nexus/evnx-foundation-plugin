@@ -5,11 +5,7 @@ Lets Claude read and make small changes to your [EVNX Foundation](https://founda
 ## Install
 
 1. In Foundation, go to **Settings → API tokens**, create one, and copy it (it's shown once).
-2. Set it as an environment variable before starting Claude Code (or in your shell profile):
-   ```bash
-   export EVNX_FOUNDATION_API_TOKEN="efnd_..."
-   ```
-3. Install the plugin (see the marketplace entry in `../marketplace.json`, or add this plugin's directory directly with `claude plugin install`/`/plugin install` once published).
+2. Install the plugin (see the marketplace entry in `../marketplace.json`, or add this plugin's directory directly with `claude plugin install`/`/plugin install` once published). Claude Code will prompt for the token during install and store it securely — it isn't kept as a plain environment variable.
 
 The plugin's MCP server is a small proxy hosted by EVNX (`mcp.foundation.evnx.community`) — it never stores your token, it only forwards it to Foundation's own API on each call. The token acts as you everywhere in Foundation your account can already reach; revoke it any time from Settings → API tokens.
 
