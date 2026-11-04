@@ -1,0 +1,12 @@
+{
+  "name": "evnx-foundation",
+  "description": "Work with your EVNX Foundation communities and Spaces from Claude: tasks, knowledge base pages, members and people - using your own personal API token.",
+  "version": "1.0.0",
+  "author": {
+    "name": "EVNX",
+    "url": "https://foundation.evnx.community"
+  },
+  "homepage": "https://foundation.evnx.community",
+  "license": "UNLICENSED",
+  "keywords": ["project management", "tasks", "knowledge base", "evnx"]
+}
