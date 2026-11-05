@@ -1,7 +1,7 @@
 {
   "name": "evnx-foundation",
-  "description": "Work with your EVNX Foundation communities and Spaces from Claude: tasks, knowledge base pages, members and people - using your own personal API token.",
-  "version": "1.0.0",
+  "description": "Work with your EVNX Foundation communities and Spaces from Claude: tasks, milestones, sprints, approvals, knowledge base pages, members and people - using your own personal API token.",
+  "version": "1.1.0",
   "author": {
     "name": "EVNX",
     "url": "https://foundation.evnx.community"

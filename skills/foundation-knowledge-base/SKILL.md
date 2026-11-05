@@ -1,11 +1,11 @@
 ---
 name: foundation-knowledge-base
-description: Use when reading or writing EVNX Foundation community knowledge base pages through the evnx-foundation MCP tools (list_knowledge_pages, get_knowledge_page, create_knowledge_page, update_knowledge_page_text) - e.g. "what does our KB say about X", "write up a KB page for Y".
+description: Use when reading or writing EVNX Foundation community knowledge base pages through the evnx-foundation MCP tools (list_knowledge_pages, get_knowledge_page, create_knowledge_page, update_knowledge_page_text, get_file) - e.g. "what does our KB say about X", "write up a KB page for Y", "show me the picture on that page".
 ---
 
 # EVNX Foundation: knowledge base
 
-Tools: `list_knowledge_pages`, `get_knowledge_page`, `create_knowledge_page`, `update_knowledge_page_text`.
+Tools: `list_knowledge_pages`, `get_knowledge_page`, `create_knowledge_page`, `update_knowledge_page_text`, plus `get_file` for pictures/PDFs/videos embedded in a page.
 
 ## Scope (read this before writing anything)
 
@@ -22,6 +22,10 @@ The knowledge base in the app is a full block editor (headings, tables, embeds, 
 ## Creating a page
 
 `create_knowledge_page({ slug, title })` makes a TOP-LEVEL page only (no nesting via this tool). If the person wants it nested under another page, create it, then tell them to drag it into place in the app (or just do the flat create and say so).
+
+## Files embedded in a page
+
+A page's `doc` block JSON may reference a picture/file node with a `fileId`. To see it, call `get_file({ fileId, kind: "kb" })` — an image under 8 MB comes back as an image you can view; anything larger, or a PDF/video, comes back as its content type and size instead. There is no tool to upload a new file directly into a knowledge base page — only into a Space's tasks/comments (`upload_file`, see `foundation-tasks`); if the person wants a file IN a KB page, say so and point them to the app's editor.
 
 ## Common mistakes
 
