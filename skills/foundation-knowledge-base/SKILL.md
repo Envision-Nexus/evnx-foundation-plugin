@@ -30,4 +30,4 @@ A page's `doc` block JSON may reference a picture/file node with a `fileId`. To 
 ## Common mistakes
 
 - Don't treat `doc` as something you can edit and send back — only `text` round-trips meaningfully through these tools.
-- A community's knowledge base needs membership to read or write (editors: Unlockers always, others only if ticked) — a 404 here usually means the signed-in person (the token owner) isn't a member or editor, not that the page doesn't exist.
+- A community's knowledge base needs membership to read or write (editors: Admins always, others only if ticked) — a 404 here usually means the signed-in person (the token owner) isn't a member or editor, not that the page doesn't exist.
